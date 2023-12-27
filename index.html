@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive navbar</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- --- nav bar area start --- -->
+    <header id="nav-menu" aria-label="navigation bar">
+      <div class="container">
+        <div class="nav-start">
+          <a class="logo" href="/">
+            <h3>LOGO</h3>
+          </a>
+          <nav class="menu">
+            <ul class="menu-bar">
+              <li>
+                <button class="nav-link">
+                  Home
+                  <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                </button>
+              </li>
+              <li><a class="nav-link" href="/">About</a></li>
+              <li>
+                <button
+                  class="nav-link dropdown-btn"
+                  data-dropdown="dropdown2"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  aria-label="discover"
+                >
+                  Service
+                  <i class="fa-solid fa-caret-down"></i>
+                </button>
+                <div id="dropdown2" class="dropdown">
+                  <ul role="menu">
+                    <li>
+                      <span class="dropdown-link-title"
+                        >Service Categories</span
+                      >
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#service_one"
+                        >Service One</a
+                      >
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#service_two"
+                        >Service Two</a
+                      >
+                    </li>
+                  </ul>
+                  <ul role="menu">
+                    <li>
+                      <span class="dropdown-link-title">Other Service</span>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#">Service One</a>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#">Service Two</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li><a class="nav-link" href="/">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="nav-end">
+          <button
+            id="hamburger"
+            aria-label="hamburger"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- --- nav bar area end --- -->
+
+    <!-- --- main section start --- -->
+    <main style="padding: 1.5rem; margin: 0 auto; max-width: 1300px">
+      <h1>Responsive Navigation Bar</h1>
+    </main>
+    <!-- --- main section end --- -->
+
+    <!-- --- font awesome --- -->
+    <script
+      src="https://kit.fontawesome.com/3dceb0ee86.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- --- script --- -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
